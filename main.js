@@ -73,8 +73,8 @@ app.on('ready', () => {
     mainWindow.webContents.downloadURL(args.downloadPath)
   })
 
-  const devPath = 'http://localhost:8888'
-  const prodPath = `http://localhost:8888`
+  const devPath = 'http://localhost:8888/#/login'
+  const prodPath = `http://localhost:8888/#/login`
   const urlLocation = isDev ? devPath : prodPath
 
   mainWindow.loadURL(urlLocation)
